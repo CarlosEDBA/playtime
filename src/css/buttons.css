@@ -1,0 +1,27 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.btn.btn-alpha {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 5px 6px 5px 6px;
+	background-color: transparent;
+	border: none;
+	border-radius: 2px;
+}
+
+.btn.btn-alpha:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}

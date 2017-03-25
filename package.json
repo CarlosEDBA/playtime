@@ -1,0 +1,29 @@
+{
+  "name": "Playtime",
+  "version": "1.0.0",
+  "description": "a video player",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "PLAYTIME",
+    "video",
+    "player",
+    "timer"
+  ],
+  "author": "Carlos Eduardo",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/carlosedba/playtime/issues"
+  },
+  "homepage": "https://github.com/carlosedba/playtime#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  }
+}

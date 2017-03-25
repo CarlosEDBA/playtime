@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Viewer</title>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/viewer.css">
+</head>
+<body>
+	<div class="playtime-videoview-wrapper">
+		<video class="playtime-videoview">
+			<source src="" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="playtime-timer">
+		<span class="playtime-timer-minutes"></span>
+		<span class="playtime-timer-separator"></span>
+		<span class="playtime-timer-seconds"></span>
+		<span class="playtime-timer-separator"></span>
+		<span class="playtime-timer-milliseconds"></span>
+	</div>
+
+	<div class="overlay"></div>
+
+	<script type="text/javascript" src="js/PLAYTIME.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Utils.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Playlist.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Timer.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Video.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Viewer.js"></script>
+	<script type="text/javascript">
+	window.onload = function () {
+		var playtime = new PLAYTIME();
+		var utils = playtime.Utils;
+		var viewer = playtime.Viewer;
+		
+		//utils.devTools();
+		viewer.init();
+	};
+	</script>
+</body>
+</html>

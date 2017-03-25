@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Configurações</title>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/config.css">
+</head>
+<body>
+	<div class="playtime-config-wrapper">
+		<span class="playtime-config-title">Configurações:</span>
+		<div class="config-section">
+			<div class="wrapper">
+				<span class="section-title">Geral</span>
+				<div class="checkbox coloured">
+					<label>
+						<input type="checkbox" class="check-playlist">
+						<span class="checkbox-material">
+							<span class="check"></span>
+						</span>
+						Manter Playlist.
+					</label>
+				</div>
+				<div class="checkbox coloured">
+					<label>
+						<input type="checkbox" class="check-timer">
+						<span class="checkbox-material">
+							<span class="check"></span>
+						</span>
+						Manter hora do Timer.
+					</label>
+				</div>
+				<div class="checkbox coloured">
+					<label>
+						<input type="checkbox" class="check-background">
+						<span class="checkbox-material">
+							<span class="check"></span>
+						</span>
+						Ativar imagem de fundo.
+					</label>
+				</div>
+				<div class="input-file">
+					<span class="name">Selecionar imagem de fundo.</span>
+					<div class="input">
+						<input type="file" class="input-background" accept="image/*">
+						<button>Abrir</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="config-section">
+			<div class="wrapper">
+				<span class="section-title">Apresentador</span>
+				<div class="input-number">
+					<span>Resolução</span>
+					<div class="input-select">
+						<select selected="13">
+							<option value="1920x1080">1920x1080</option>
+							<option value="1600x1024">1600x1024</option>
+							<option value="1600x900">1600x900</option>
+							<option value="1440x900">1440x900</option>
+							<option value="1366x768">1366x768</option>
+							<option value="1280x1024">1280x1024</option>
+							<option value="1280x960">1280x960</option>
+							<option value="1280x800">1280x800</option>
+							<option value="1280x768">1280x768</option>
+							<option value="1280x720">1280x720</option>
+							<option value="1024x768">1024x768</option>
+							<option value="800x600" selected>800x600</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playtime-win-buttons">
+			<button class="btn btn-alpha save">Salvar</button>
+			<button class="btn btn-alpha cancel">Cancelar</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/PLAYTIME.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Utils.js"></script>
+	<script type="text/javascript" src="js/PLAYTIME.Config.js"></script>
+	<script type="text/javascript">
+	window.onload = function () {
+		var playtime = new PLAYTIME()
+		var utils = playtime.Utils
+		var config = playtime.Config
+
+		//utils.devTools()
+		config.init()
+	}
+	</script>
+</body>
+</html>
